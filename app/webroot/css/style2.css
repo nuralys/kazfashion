@@ -1,0 +1,6 @@
+.submit input{
+    background-image: url(../img/search_button.jpg);
+    border: none;
+    height: 34px;
+    width: 210px;
+}
