@@ -1,7 +1,7 @@
 <div class="side_bar_container">
 				<div class="side_bar" id="sidebar">
 					<div class="sider_bar_zhurnal">
-						<img src="img/side_bar_zhurnal.jpg">
+						<img src="/img/side_bar_zhurnal.jpg">
 					</div>
 					<div class="side_bar_video">
 						<iframe width="325" height="184" src="https://www.youtube.com/embed/PWVy6PdijtE" frameborder="0" allowfullscreen=""></iframe>
@@ -16,7 +16,7 @@
 					</div>
 					<div class="sider_bar_item">
 						<div class="sider_bar_item_img">
-						<a href="">	<img src="img/side_bar_img1.jpg" alt=""></a>
+						<a href="">	<img src="/img/side_bar_img1.jpg" alt=""></a>
 						</div>
 						<div class="side_bar_title">
 						<a href="">	Junior Fashion Week - Детская неделя моды 2015 
@@ -32,7 +32,7 @@
 					</div>
 					<div class="sider_bar_item">
 						<div class="sider_bar_item_img">
-							<a href="">	<img src="img/side_bar_img2.jpg" alt=""></a>
+							<a href="">	<img src="/img/side_bar_img2.jpg" alt=""></a>
 						</div>
 						<div class="side_bar_title">
 							<a href="">Junior Fashion Week - Детская неделя моды 2015 
