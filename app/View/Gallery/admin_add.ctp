@@ -15,7 +15,7 @@ echo $this->Form->input('title', array('label' => 'Название:'));?>
 	</select>
 </div>
 <?php
-echo $this->Form->input('img', array('label' => 'Изображение:', 'type' => 'file'));
+echo $this->Form->input('img', array('label' => '', 'type' => 'file'));
 echo $this->Form->end('Создать');
 ?>
 </div>

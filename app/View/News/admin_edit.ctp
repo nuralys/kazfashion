@@ -5,12 +5,9 @@
 							
 								<img src="/img/news/thumbs/<?=$data['News']['img']?>">
 						</div>
-						<div class="fileform">
-						<div id="fileformlabel"></div>
-							<div class="selectbutton">Обзор</div>
 					
-							<?php echo $this->Form->input('img', array('label' => '', 'type' => 'file', 'id' => 'LookbookImg')); ?>
-						</div>
+							<?php echo $this->Form->input('img', array('label' => '', 'type' => 'file')); ?>
+						
 					</div>
 				</div>
 

@@ -11,12 +11,9 @@ echo $this->Form->input('weight', array('label' => '', 'class' => 'admin_input_f
 
 
 ?>
-<div class="fileform">
-						<div id="fileformlabel"></div>
-							<div class="selectbutton">Обзор</div>
 					
 							<?php echo $this->Form->input('img', array('label' => '', 'type' => 'file', 'id' => 'LookbookImg')); ?>
-						</div>
+					
 
 <?
 	

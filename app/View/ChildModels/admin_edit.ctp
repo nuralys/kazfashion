@@ -8,13 +8,10 @@ echo $this->Form->create('ChildModel', array('type' => 'file'));?>
 							
 								<img src="/img/models/thumbs/<?=$data['ChildModel']['img']?>">
 						</div>
-						<div class="fileform">
-						<div id="fileformlabel"></div>
-							<div class="selectbutton">Обзор</div>
+						
 					
 							<?php echo $this->Form->input('img', array('label' => '', 'type' => 'file', 'id' => 'LookbookImg')); ?>
-						</div>
-					</div>
+					
 				</div>
 				<div class="model_info">
 <?php
