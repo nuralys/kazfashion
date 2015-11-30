@@ -11,8 +11,17 @@
 	<div class="gallery_item_title"><?=$item['Gallery']['title'] ?></div>
 	</div>
 	</div>
-	 <a href="/admin/gallery/edit/<?=$item['Gallery']['id']?>" class=" buttons">Редактировать</a> 
-			<?php echo $this->Form->postLink('Удалить', array('action' => 'admin_delete', $item['Gallery']['id']), array('class' => 'admin  buttons'),array('confirm' => 'Подтвердите удаление')); ?>
+	<a href="/admin/gallery/edit/<?=$item['Gallery']['id']?>" class=" buttons"><span>Редактировать</span></a> 
+			<div class="admin_delete">
+					<?php echo $this->Form->postLink(
+   $this->Html->tag('span', 'удалить', array('class' => 'glyphicon glyphicon-remove')),
+        array('action' => 'delete', $item['Gallery']['id']),
+        array('escape'=>false),
+    __('Подтвердите удаление', $item['Gallery']['id']),
+   array('class' => 'buttons')
+); ?>
+</div>
 			</li>
+			
 <?php endforeach; ?>
 </ul>

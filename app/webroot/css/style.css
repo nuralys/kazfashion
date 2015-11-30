@@ -351,7 +351,7 @@
     position: relative;
     margin-bottom: 20px;
 }
-.buttons {
+.buttons, .admin_delete a {
     width: 137px;
     line-height: 35px;
     margin-bottom: 10px;
@@ -367,8 +367,12 @@
 .more.buttons {
     float: right;
 }
-.buttons:hover {
-    text-decoration: underline;
+
+.buttons:hover span, .admin_delete a:hover span {
+    display: block;
+    margin: 5px;
+    background: #313131;
+    color: #fff;
 }
 .title {
     font-family: "Helvetica-Light";
@@ -530,6 +534,13 @@
     width: 266px;
     text-align: center;
     margin: 0 auto;
+}
+.buttons span, .admin_delete span {
+    display: block;
+    margin: 5px;
+}
+.admin_delete {
+    float: right;
 }
 .admin_input_f {
     box-shadow: inset 0px 1px 2px 1px rgba(0,0,0,0.5);
