@@ -28,7 +28,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css(array('cake.generic', 'imgareaselect-default'));
+		echo $this->Html->css(array('style', 'reset'));
 
 		echo $this->Html->script(array('ckeditor/ckeditor', 'jquery.min', 'jquery.imgareaselect'));
 		echo $this->fetch('meta');
@@ -37,42 +37,66 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1>Административная панель сайта</h1>
-		</div>
-		<nav>
-	<ul>
-		<li><a href="/admin">Главная</a></li>
-		<li><a href="/admin/pages/edit/1">О компании</a></li>
-		<li><a href="/admin/child_models">Модели</a></li>
-		<li><a href="/admin/lookbooks">Lookbooks</a></li>
-		<li><a href="/admin/albums">Альбомы</a></li>
-		<li><a href="/admin/gallery">Галерея</a></li>
-		<li><a href="/admin/news">Новости</a></li>
-		<li><a href="#">Каталог товаров</a></li>
-		<li><a href="#">Контакты</a></li>
-	</ul>
-</nav>
-		<div id="content">
+<header>
+		
+		<section class="head">
+			<div class="cr">
+				<div class="logo">
+					<a href="">
+						<img src="/img/logo_gif.gif" alt=""/>
+					</a>
+
+				</div>
+				<nav class="top_menu">
+					<div class="top_menu_item active">
+						<a href="index.html">Главная</a>
+						<span>Главная</span>
+					</div>
+					<div class="top_menu_item">
+						<a href="">О компании</a>
+						<span>О нас, информация</span>
+					</div>
+					<div class="top_menu_item">
+						<a href="/admin/child_models">Модели</a>
+						<span>Дети модели</span>
+					</div>
+					<div class="top_menu_item">
+						<a href="">Услуги</a>
+						<span>Подразделы</span>
+					</div>
+					<div class="top_menu_item ">
+						<a href="gallery.html">Галерея</a>
+						<span>Фотосессии</span>
+					</div>
+					<div class="top_menu_item">
+						<a href="">Новости</a>
+						<span>События</span>
+					</div>
+					<div class="top_menu_item">
+						<a href="">Каталог товаров</a>
+						<span>Шоппинг</span>
+					</div>
+					<div class="top_menu_item">
+						<a href="">Контакты</a>
+						<span>Связь</span>
+					</div>
+				</nav>
+			</div>
+		</section>
+	</header>
+	
+		
+		<div class=" cr">
+		<div class="container">
 
 			<?php echo $this->Session->flash('good'); ?>
 			<?php echo $this->Session->flash('bad'); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
 		</div>
-	</div>
+		
+	
 	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>

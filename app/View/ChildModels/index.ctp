@@ -33,8 +33,8 @@
 				<div class="date_gallery">Номер #ID:<?=$item['ChildModel']['id'] ?></div>
 			</div>
 		</div>
-		<a href="" class="cooperation buttons">Сотрудничать</a>
-		<a href="/models/id/<?=$item['ChildModel']['id'] ?>" class="more buttons">Подробнее</a>
+		<a href="" class="cooperation buttons"><span>Сотрудничать </span></a>
+		<a href="/models/id/<?=$item['ChildModel']['id'] ?>" class="more buttons"><span>Подробнее </span></a>
 	</li>
 <?php endforeach; ?>
 </ul>

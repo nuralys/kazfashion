@@ -50,7 +50,7 @@
 				
 				</div>
 				<nav class="top_menu">
-					<div class="top_menu_item active">
+					<div class="top_menu_item  <?php echo ($this->request->params['action']=='home') ? 'active' : '' ?>">
 						<a href="/">Главная</a>
 						<span>Главная</span>
 					</div>
@@ -58,7 +58,7 @@
 						<a href="">О компании</a>
 						<span>О нас, информация</span>
 					</div>
-					<div class="top_menu_item">
+					<div class="top_menu_item <?php echo ($this->request->params['controller']=='childmodels') ? 'active' : '' ?>">
 						<a href="/models">Модели</a>
 						<span>Дети модели</span>
 					</div>
@@ -66,12 +66,12 @@
 						<a href="">Услуги</a>
 						<span>Подразделы</span>
 					</div>
-					<div class="top_menu_item ">
+					<div class="top_menu_item  <?php echo ($this->request->params['controller']=='albums') ? 'active' : '' ?>">
 						<a href="/albums"> Галерея  </a>
 						<span>   Фотосессии </span>
 					</div>
-					<div class="top_menu_item">
-						<a href="">   Новости      </a>
+					<div class="top_menu_item  <?php echo ($this->request->params['controller']=='news') ? 'active' : '' ?>">
+						<a href="/news">   Новости      </a>
 						<span>                   События    </span>
 					</div>
 					<div class="top_menu_item">
