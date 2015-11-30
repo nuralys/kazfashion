@@ -14,38 +14,21 @@
 							</p>
 						</div>
 					</div>
+					<?php foreach($newsForSidebar as $item): ?>
 					<div class="sider_bar_item">
 						<div class="sider_bar_item_img">
 						<a href="">	<img src="/img/side_bar_img1.jpg" alt=""></a>
 						</div>
 						<div class="side_bar_title">
-						<a href="">	Junior Fashion Week - Детская неделя моды 2015 
-						в Астане!</a>
+						<a href=""><?=$item['News']['title'] ?></a>
 						</div>
 						<div class="side_bar_item des">
 							<p>
-								Летнюю обложку журнала WDmagazine украсят - Одна из 
-самых красивых певиц в России Татьяна Котова и юная 
-модель Милана Лионенко.
+								<?= $this->Text->truncate(strip_tags($item['News']['body']), 129, array('ellipsis' => '...', 'exact' => true)) ?>
 							</p>
 						</div>
 					</div>
-					<div class="sider_bar_item">
-						<div class="sider_bar_item_img">
-							<a href="">	<img src="/img/side_bar_img2.jpg" alt=""></a>
-						</div>
-						<div class="side_bar_title">
-							<a href="">Junior Fashion Week - Детская неделя моды 2015 
-								в Астане!</a>
-						</div>
-						<div class="side_bar_item des">
-							<p>
-								Летнюю обложку журнала WDmagazine украсят - Одна из 
-самых красивых певиц в России Татьяна Котова и юная 
-модель Милана Лионенко.
-							</p>
-						</div>
-					</div>
+					<?php endforeach; ?>
 
 					<div class="insta">
 						<!-- По умолчанию -->
