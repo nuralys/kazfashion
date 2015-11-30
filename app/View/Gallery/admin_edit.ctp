@@ -1,4 +1,4 @@
-	<div class="title admin_t">Редактирование новости</div>
+	<div class="title admin_t">Редактирование галереи</div>
 <?php 
 
 echo $this->Form->create('Gallery', array('type' => 'file', ));

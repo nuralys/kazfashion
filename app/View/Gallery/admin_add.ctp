@@ -1,10 +1,7 @@
-<div class="admin_add">
-	<div class="ad_up">
-		<h2>Добавление фото</h2>
-	</div>
+	<div class="title admin_t">Добавление фото</div>
 <?php 
 echo $this->Form->create('Gallery', array('type' => 'file'));
-echo $this->Form->input('title', array('label' => 'Название:'));?>
+echo $this->Form->input('title', array('label' => '', 'class' => 'admin_input_f model ','placeholder' => 'Название'));?>
 <div class="input select">
 	<label for="GalleryAlbumId">Альбом:</label>
 	<select name="data[Gallery][album_id]" id="GalleryAlbumId" required="required">
