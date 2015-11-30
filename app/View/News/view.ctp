@@ -7,7 +7,7 @@
 						
 						</div>
 					</div>
-					<div class="news_item_title"><?=$post['News']['title'] ?></div>
+					<div class="news_item_title"><h1>	<?=$post['News']['title'] ?></h1></div>
 					<div class="news_item_des">
 						<?=$post['News']['body'] ?>
 					</div>
