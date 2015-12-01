@@ -121,4 +121,16 @@ class ChildModelsController extends AppController{
 		}
 	}
 
+	public function admin_delete($id){
+		if (!$this->ChildModel->exists($id)) {
+			throw new NotFounddException('Такой модели нет');
+		}
+		if($this->ChildModel->delete($id)){
+			$this->Session->setFlash('Удалено', 'default', array(), 'good');
+		}else{
+			$this->Session->setFlash('Ошибка', 'default', array(), 'bad');
+		}
+		return $this->redirect($this->referer());
+	}
+
 }
