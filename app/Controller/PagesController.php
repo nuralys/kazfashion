@@ -8,7 +8,8 @@ class PagesController extends AppController {
 
 	public function home(){
 		$news = $this->News->find('all', array(
-			'limit' => 3
+			'limit' => 3,
+			'order' => array('date' => 'desc')
 		));
 
 		$this->view = 'home';

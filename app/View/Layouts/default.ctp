@@ -62,6 +62,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 						<span>Подразделы</span>
 					</div>
 					<div class="top_menu_item ">
+						<a href="/admin/albums">Фотосессии</a>
+						<span>События</span>
+					</div>
+					<div class="top_menu_item ">
 						<a href="/admin/gallery">Галерея</a>
 						<span>Фотосессии</span>
 					</div>
