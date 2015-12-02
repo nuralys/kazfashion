@@ -1,5 +1,5 @@
 <div class="admin_model">
-	<div class="admin_title ">Фотосесси</div>
+	<div class="admin_title ">Фотосессии</div>
 <a href="/admin/albums/add" class="admin_button model">Добавить фотосессию</a>
 </div>
 <ul class="gallery_list">
