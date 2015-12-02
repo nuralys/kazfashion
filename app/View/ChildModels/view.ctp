@@ -49,10 +49,15 @@
 						<?=$data['ChildModel']['description'] ?>
 					</p>
 				</div>
+				
 				<div class="tabs__wrapper">
 					<div class="tabs-header">
-						<div class="tabs-header__title  lookbook active">lookbook</div>
-						<div class="tabs-header__title video">видео</div>
+						<?php if(!empty($lookbook)): ?>
+							<div class="tabs-header__title  lookbook active">lookbook</div>
+						<?php endif ?>
+						<?php if(!empty($videos)): ?>
+							<div class="tabs-header__title video">видео</div>
+						<?php endif ?>
 					</div>
 					<div class="tabs-box">
 						<div class="tabs-box__item active">
